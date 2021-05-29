@@ -33,8 +33,8 @@ while robot.step(timestep) != -1:
     lidar_image = lidar.getRangeImage()
 
     if lidar_image[lidar_size//2] > lidar_max_range/10:
-        motor_left.setVelocity(5)
-        motor_right.setVelocity(4)
+        motor_left.setVelocity(4.5)
+        motor_right.setVelocity(5)
     elif poi_list[9][0] > position.getValues()[0]:
         motor_left.setVelocity(0)
         motor_right.setVelocity(0)
